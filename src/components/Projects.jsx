@@ -13,7 +13,7 @@ const Projects = () => {
     {
       id: 2,
       src: spotify,
-      link: "https://klarna.herokuapp.com/",
+      link: "https://spotify-batch5.vercel.app/",
     },
     {
       id: 3,
