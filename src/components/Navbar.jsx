@@ -30,13 +30,13 @@ const Navbar = () => {
 
   return (
     <div className="bg-black text-white w-full">
-      <div className="container mx-auto flex justify-between items-center h-20">
-        <h1 className="text-5xl font-medium ml-1">Weil Essaisi</h1>
+      <div className="container mx-auto flex justify-between items-center h-16">
+        <h1 className="text-3xl font-medium ml-1">Weil Essaisi</h1>
         <ul className="hidden md:flex flex-row ">
           {links.map(({ id, link, idName }) => (
             <li
               key={id}
-              className="px-2 cursor-pointer capitalize font-medium text-gray-500 hover:scale-100 duration-200 hover:text-white"
+              className="px-2 cursor-pointer capitalize font-medium text-gray-300 hover:scale-100 duration-200 hover:text-white"
             >
               <Link
                 activeClass="text-white"
@@ -63,7 +63,7 @@ const Navbar = () => {
           {links.map(({ id, link }) => (
             <li
               key={id}
-              className="px-4 cursor-pointer capitalize py-6 text-4xl"
+              className="px-4 cursor-pointer capitalize py-6 text-3xl"
             >
               <Link
                 activeClass="text-white"

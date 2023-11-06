@@ -2,6 +2,10 @@ import React from "react";
 import spotify from "../assets/spotify-bild.jpg";
 import kanban from "../assets/kanban-bild.jpg";
 import klarna from "../assets/klarna-bild3.jpg";
+import advice from "../assets/advice-bild.jpg";
+import subscriptionplan from "../assets/subscription-bild.jpg";
+import starrating from "../assets/starrating-bild.jpg";
+import restaurantpage from "../assets/restaurant-bild.jpg";
 
 const Projects = () => {
   const Portfolios = [
@@ -20,14 +24,39 @@ const Projects = () => {
       src: klarna,
       link: "https://klarna.herokuapp.com/",
     },
+    {
+      id: 4,
+      src: advice,
+      link: "https://endearing-custard-8c166b.netlify.app",
+    },
+    {
+      id: 5,
+      src: agecalculator,
+      link: "https://jazzy-pavlova-e39f67.netlify.app",
+    },
+    {
+      id: 6,
+      src: subscriptionplan,
+      link: "https://extraordinary-tarsier-c52ad2.netlify.app",
+    },
+    {
+      id: 7,
+      src: starrating,
+      link: "https://rad-queijadas-6edac1.netlify.app",
+    },
+    {
+      id: 8,
+      src: restaurantpage,
+      link: "https://helpful-licorice-c6a0c5.netlify.app",
+    },
   ];
 
   return (
     <div
       name="Portfolio"
-      className="bg-gradient-to-b from-black to bg-gray-800 w-full text-white md:h-screen"
+      className="bg-gradient-to-b from-black to bg-gray-800 w-full text-white "
     >
-      <div className="container mx-auto px-4 flex flex-col justify-center items-center h-full">
+      <div className="container mx-auto py-16 px-5 flex flex-col justify-center items-center h-full">
         <div className="pb-8">
           <p className="flex flex-col items-center justify-center text-4xl font-bold p-2 inline">
             Portfolio

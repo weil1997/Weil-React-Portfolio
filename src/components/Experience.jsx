@@ -71,22 +71,22 @@ export const Experience = () => {
   return (
     <div
       name="experience"
-      className="bg-gradient-to-b from-gray-800 to-black w-full min-h-screen"
+      className="bg-gradient-to-b from-gray-800 to-black w-full h-screen "
     >
-      <div className="container mx-auto px-4 py-20  text-white">
+      <div className="container mx-auto px-4 py-10   text-white">
         <div className="text-center">
           <h2 className="text-4xl font-bold mb-2">Experience</h2>
           <p className="text-lg font-bold">
             These are the technologies I have worked with:
           </p>
         </div>
-        <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 py-8">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 py-8">
           {techs.map((tech) => (
             <div
               key={tech.id}
               className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${tech.style}`}
             >
-              <img src={tech.src} alt={tech.title} className="w-20 mx-auto" />
+              <img src={tech.src} alt={tech.title} className="w-16 mx-auto" />
               <p className="mt-4">{tech.title}</p>
             </div>
           ))}
