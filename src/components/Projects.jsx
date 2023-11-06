@@ -7,7 +7,7 @@ import subscriptionplan from "../assets/subscriptionbild.jpg";
 import starrating from "../assets/starrating-bild.jpg";
 import restaurantpage from "../assets/restaurant-bild.jpg";
 
-const Projects  = () => {
+const Projects = () => {
   const Portfolios = [
     {
       id: 1,
@@ -33,7 +33,7 @@ const Projects  = () => {
       id: 5,
       src: agecalculator,
       link: "https://jazzy-pavlova-e39f67.netlify.app",
-    },dwdefqe
+    },
     {
       id: 6,
       src: subscriptionplan,
