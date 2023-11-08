@@ -3,9 +3,9 @@ import spotify from "../assets/spotify-bild.jpg";
 import kanban from "../assets/kanban-bild.jpg";
 import klarna from "../assets/klarna-bild3.jpg";
 import advice from "../assets/advice-bild.jpg";
-import subscription from "../assets/subscriptionbild.JPG";
-import starrating from "../assets/starrating-bild.JPG";
-import restaurantpage from "../assets/restaurant-bild.JPG";
+import subscription from "../assets/subscriptionbild.jpg";
+import starrating from "../assets/starrating-bild.jpg";
+import restaurantpage from "../assets/restaurant-bild.jpg";
 
 const Projects = () => {
   const Portfolios = [
