@@ -4,7 +4,7 @@ import react from "../Skills/react.png";
 import typescript from "../Skills/typescript.png";
 import javascript from "../Skills/javascript.png";
 import mongodb from "../Skills/mongodb.png";
-import node from "../Skills/node.js.png";
+import node from "../Skills/nodejs.png";
 import tailwind from "../Skills/tailwind.png";
 import sass from "../Skills/sass.png";
 import css from "../Skills/css.png";
@@ -71,22 +71,24 @@ export const Experience = () => {
   return (
     <div
       name="experience"
-      className="bg-gradient-to-b from-gray-800 to-black w-full h-screen "
+      className="bg-gradient-to-b from-gray-800 to-black w-full py-8"
     >
-      <div className="container mx-auto px-4 py-10   text-white">
-        <div className="text-center">
-          <h2 className="text-4xl font-bold mb-2">Experience</h2>
-          <p className="text-lg font-bold">
-            These are the technologies I have worked with:
+      <div className="max-w-screen p-4 flex flex-col justify-center text-white">
+        <div>
+          <p className=" flex flex-col items-center justify-center text-4xl font-bold p-2 inline">
+            Experience
+          </p>
+          <p className="py-6 text-center font-bold ">
+            This is the technologies I have worked with:
           </p>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 py-8">
+        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
           {techs.map((tech) => (
             <div
               key={tech.id}
               className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${tech.style}`}
             >
-              <img src={tech.src} alt={tech.title} className="w-16 mx-auto" />
+              <img src={tech.src} alt="" className="w-16 h-16 mx-auto" />
               <p className="mt-4">{tech.title}</p>
             </div>
           ))}
@@ -95,5 +97,4 @@ export const Experience = () => {
     </div>
   );
 };
-
 export default Experience;

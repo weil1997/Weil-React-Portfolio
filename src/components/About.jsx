@@ -1,16 +1,18 @@
+import React from "react";
+
 const About = () => {
   return (
     <div
       name="about"
-      className="w-full h-screen  bg-gradient-to-b from-gray-800 to-black text-white"
+      className="w-full bg-gradient-to-b from-gray-800 to-black text-white py-8"
     >
-      <div className="max-w-screen-lg p-28 mx-auto flex flex-col justify-center w-full h-full">
-        <div className="pb-4 flex justify-center align-middle">
-          <p className="flex flex-col items-center justify-center text-4xl font-bold border-gray-500 p-2 inline">
+      <div className="max-w-screen-lg p4 mx-auto flex flex-col justify-center w-full h-full p-4">
+        <div className="pb-8 flex justify-center align-middle">
+          <p className="flex flex-col items-center justify-center text-4xl font-bold border-gray-500 p-2 inline mt-16">
             About
           </p>
         </div>
-        <p className="text-xl mt-6">
+        <p className="text-xl mt-10 p-4">
           I am a React developer with a skill set in the Mern Stack. I possess a
           solid understanding of React ,as well as Node.js, MongoDB, and Express
           which allows me to build powerful, full-stack applications that
@@ -21,7 +23,7 @@ const About = () => {
         </p>
 
         <br />
-        <p className="text-xl ">
+        <p className="text-xl p-4">
           I take pride in staying up-to-date with the latest technologies and
           trends, and am constantly honing my skills to ensure that I remain at
           the forefront of my field. With my exceptional attention to detail,
