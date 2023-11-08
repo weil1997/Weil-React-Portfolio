@@ -3,6 +3,7 @@ import spotify from "../assets/spotify-bild.jpg";
 import kanban from "../assets/kanban-bild.jpg";
 import klarna from "../assets/klarna-bild3.jpg";
 import advice from "../assets/advice-bild.jpg";
+import agecalculator from "../assets/agecalculator.JPG";
 import subscription from "../assets/subscriptionbild.JPG";
 import starrating from "../assets/starrating-bild.JPG";
 import restaurantpage from "../assets/restaurant-bild.JPG";
