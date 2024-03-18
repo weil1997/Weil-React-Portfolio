@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../../../pictures/image.png"; // Adjust the import path as necessary
+import image from "../../pictures/image.png"; // Adjust the import path as necessary
 
 const About = () => {
   return (
@@ -18,7 +18,6 @@ const About = () => {
         </div>
         {/* Text-container */}
         <div className="w-full md:w-1/2 mt-8 md:mt-0 md:pl-12 ">
-          {/* Öka vänstermarginalen (pl) för att matcha med positionen av "Foodie" bilden */}
           <h2 className="text-4xl font-bold mb-4 from-cyan-500 my-16 text-center md:text-start ">
             About Me
           </h2>
