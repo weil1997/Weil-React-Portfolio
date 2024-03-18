@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../../pictures/image.png"; // Adjust the import path as necessary
+import image from "../../../pictures/image.png"; // Adjust the import path as necessary
 
 const About = () => {
   return (
