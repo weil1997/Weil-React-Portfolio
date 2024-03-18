@@ -1,5 +1,4 @@
 import React from "react";
-import image from "../../pictures/image.png"; // Adjust the import path as necessary
 
 const About = () => {
   return (
@@ -11,7 +10,7 @@ const About = () => {
         {/* Bild-container */}
         <div className="w-full md:w-1/2 flex justify-center md:justify-start">
           <img
-            src={image}
+            src="/pictures/image.png"
             alt="About Me"
             className="rounded-lg shadow-xl w-full max-w-sm md:max-w-md my-16" // Anpassa dessa klasser för att ställa in önskad bredd
           />
