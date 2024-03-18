@@ -1,9 +1,9 @@
 import React from "react";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
-import SocialLinks from "./components/SocialLinks";
-import { Experience } from "./components/Experience";
-import Projects from "./components/Projects";
+import Experience from "./components/Experience";
+
+import Portfolio from "./components/Portfolio";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import "./App.css";
@@ -13,9 +13,8 @@ export default function App() {
     <div>
       <Navbar />
       <Home />
-      <SocialLinks />
       <Experience />
-      <Projects />
+      <Portfolio />
       <About />
       <Contact />
     </div>

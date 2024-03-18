@@ -1,30 +1,31 @@
 import React from "react";
-import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import weilbild from "../assets/weil-bg.png";
+import SocialLinks from "./SocialLinks";
 
 const Home = () => {
   return (
     <div
       name="home"
-      className="w-full bg-gradient-to-b from-black via-black to-gray-800 text-white"
+      className="w-full h-screen text-white bg-gradient-to-b from-black via-black to-gray-800 "
     >
-      <div className="flex items-center h-full px-4 flex-col-reverse md:flex-row justify-between mt-20 gap-24">
-        <div className="flex flex-col justify-center h-full">
-          <h2 className="text-4xl sm:text-7xl font bold text-white">
-            I'm a Fullstack Developer
+      <div className="max-w-5xl px-4 flex flex-col md:flex-row items-center justify-center h-full mx-auto ">
+        <div className="flex flex-col items-center md:items-start max-w-5xl mx-auto    ">
+          <h2 className="text-4xl sm:text-7xl text-white text-center md:text-start">
+            I'm a Fullstack <br className="hidden md:inline" /> Developer
           </h2>
-          <p className="text-gray-500 py-4 max-w-md text-lg">
+          <p className="text-gray-500 py-4 text-lg text-center md:text-start">
             I have experience in developing fullstack solutions with a strong
-            understanding of databases and fullstack technologys
+            understanding of databases and fullstack technologies.
           </p>
-          <div></div>
+          {/* Placera SocialLinks under texten */}
+          <SocialLinks />
         </div>
-        <div style={{ width: "70%", marginTop: 80 }}>
+        <div className="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 mt-8 md:mt-0 flex justify-center">
           <img
             src={weilbild}
             alt="My profile"
-            className="rounded-full mx-auto"
-            style={{ borderRadius: "10%" }}
+            className="rounded-full"
+            style={{ maxWidth: "300px", borderRadius: "10%" }}
           />
         </div>
       </div>

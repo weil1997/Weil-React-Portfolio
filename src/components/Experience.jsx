@@ -15,55 +15,54 @@ export const Experience = () => {
     {
       id: 1,
       src: react,
-      title: "REACT",
+
       style: "shadow-blue-600",
     },
     {
       id: 2,
       src: typescript,
-      title: "TYPESCRIPT",
       style: "shadow-blue-500",
     },
     {
       id: 3,
       src: javascript,
-      title: "JAVASCRIPT",
+
       style: "shadow-yellow-500",
     },
     {
       id: 4,
       src: mongodb,
-      title: "MONGODB",
+
       style: "shadow-green-500",
     },
     {
       id: 5,
       src: node,
-      title: "NODE.JS",
+
       style: "shadow-green-600",
     },
     {
       id: 6,
       src: tailwind,
-      title: "TAILWIND",
+
       style: "shadow-sky-600",
     },
     {
       id: 7,
       src: sass,
-      title: "SASS",
+
       style: "shadow-purple-500",
     },
     {
       id: 8,
       src: css,
-      title: "CSS",
+
       style: "shadow-blue-500",
     },
     {
       id: 9,
       src: html,
-      title: "HTML",
+
       style: "shadow-orange-500",
     },
   ];
@@ -71,25 +70,23 @@ export const Experience = () => {
   return (
     <div
       name="experience"
-      className="bg-gradient-to-b from-gray-800 to-black w-full py-8"
+      className="bg-gradient-to-b from-gray-800 to-black w-full text-white "
     >
-      <div className="max-w-screen p-4 flex flex-col justify-center text-white">
-        <div>
-          <p className=" flex flex-col items-center justify-center text-4xl font-bold p-2 inline">
-            Experience
-          </p>
-          <p className="py-6 text-center font-bold ">
-            This is the technologies I have worked with:
-          </p>
-        </div>
-        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
+      <div className="max-w-5xl px-4 flex flex-col md:flex-row justify-between items-center py-4 md:py-8 mx-auto ">
+        <p className="text-2xl font-bold py-4 ">Tech Stack</p>
+
+        {/* Container för teknikstacks, nu som en rad och med större ikoner */}
+        <div className="flex flex-row items-center justify-end space-x-4 md:space-x-6  ">
           {techs.map((tech) => (
-            <div
-              key={tech.id}
-              className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${tech.style}`}
-            >
-              <img src={tech.src} alt="" className="w-16 h-16 mx-auto" />
-              <p className="mt-4">{tech.title}</p>
+            <div key={tech.id} className="flex items-center">
+              <img
+                src={tech.src}
+                alt={tech.title}
+                className="w-8 h-8 md:w-10 md:h-10"
+              />{" "}
+              {/* Större ikoner */}
+              <p className="text-xs hidden md:block ml-2">{tech.title}</p>{" "}
+              {/* Text visas endast på större skärmar */}
             </div>
           ))}
         </div>
@@ -97,4 +94,5 @@ export const Experience = () => {
     </div>
   );
 };
+
 export default Experience;

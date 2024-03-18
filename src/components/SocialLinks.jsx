@@ -1,7 +1,5 @@
 import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { HiOutlineMail } from "react-icons/hi";
-import { BsFillPersonLinesFill } from "react-icons/bs";
 
 function SocialLinks() {
   const links = [
@@ -9,7 +7,7 @@ function SocialLinks() {
       id: 1,
       child: <FaLinkedin size={30} />,
       href: "https://www.linkedin.com/in/weil-essaisi-430707195/",
-      style: { marginBottom: "10px" },
+      style: { padding: 8 },
     },
     {
       id: 2,
@@ -19,15 +17,15 @@ function SocialLinks() {
   ];
 
   return (
-    <div className="fixed left-0 top-1/2 transform -translate-y-1/2 p-4">
-      {links.map(({ id, child, href, style }) => (
+    <div className="flex flex-row items-center mt-4 gap-4">
+      {links.map(({ id, child, style, href }) => (
         <a
           key={id}
           href={href}
-          className="bg-gray-500 text-white rounded-full w-10 h-10 flex justify-center items-center hover:bg-gray-700 transition duration-300"
+          className="bg-gray-500 text-white rounded-full w-10 h-10 flex justify-center items-center hover:bg-gray-700 transition duration-300 mb-4"
+          style={style}
           target="_blank"
           rel="noreferrer"
-          style={{ ...style }}
         >
           {child}
         </a>
